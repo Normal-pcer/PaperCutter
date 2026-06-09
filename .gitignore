@@ -1,4 +1,19 @@
+# PDF files
 1.pdf
 out.pdf
 out_*.pdf
+*.pdf
+
+# Claude
 .claude/
+
+# Python
+__pycache__/
+backend/uploads/
+
+# Frontend
+frontend/node_modules/
+frontend/dist/
+
+# Vite
+.vite/
