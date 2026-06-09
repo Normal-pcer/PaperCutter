@@ -34,7 +34,7 @@ cd frontend && npm install && cd ..
 ### 启动
 
 ```bash
-# 终端 1：启动后端 (http://localhost:8000)
+# 终端 1：启动后端 (http://localhost:7652)
 cd backend && python server.py
 
 # 终端 2：启动前端 (http://localhost:5173)

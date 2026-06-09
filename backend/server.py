@@ -207,4 +207,4 @@ async def render_page_image(file_id: str, page_num: int, dpi: int = 150):
 
 if __name__ == "__main__":
     import uvicorn
-    uvicorn.run(app, host="127.0.0.1", port=8000)
+    uvicorn.run(app, host="127.0.0.1", port=7652)

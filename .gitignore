@@ -17,3 +17,5 @@ frontend/dist/
 
 # Vite
 .vite/
+
+*.pid

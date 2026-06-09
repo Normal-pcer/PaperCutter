@@ -2,7 +2,7 @@ import axios from 'axios'
 import type { PdfInfo, AutoCutResult, PasteItem, OutputPage } from '../types'
 
 const api = axios.create({
-  baseURL: 'http://127.0.0.1:8000/api',
+  baseURL: 'http://127.0.0.1:7652/api',
   timeout: 120000,
 })
 
@@ -54,5 +54,5 @@ export async function getPdfInfo(fileId: string): Promise<PdfInfo> {
 // ─── Page Image (fallback) ────────────────────────────────────────────
 
 export function getPageImageUrl(fileId: string, pageNum: number, dpi = 150): string {
-  return `http://127.0.0.1:8000/api/pdf/${fileId}/page/${pageNum}/image?dpi=${dpi}`
+  return `http://127.0.0.1:7652/api/pdf/${fileId}/page/${pageNum}/image?dpi=${dpi}`
 }

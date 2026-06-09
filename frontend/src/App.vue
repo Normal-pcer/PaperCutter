@@ -229,7 +229,7 @@ async function onUpload(file: File) {
       const blobUrl = getPageImageUrl(fileId.value, 0).replace('/page/0/image', '')
       // Actually, let's fetch the raw PDF from backend
       try {
-        const resp = await fetch(`http://127.0.0.1:8000/api/pdf/${fileId.value}/page/0/image`)
+        const resp = await fetch(`http://127.0.0.1:7652/api/pdf/${fileId.value}/page/0/image`)
         // The backend doesn't serve the raw PDF, let's use the file directly
         appDebugLines.value.push('Using file ArrayBuffer for pdf.js...')
         const buffer = await file.arrayBuffer()
